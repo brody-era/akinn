@@ -41,7 +41,7 @@ export default function Halftone404Canvas() {
     v.autoplay = true;
     v.loop = true;
     v.playsInline = true;
-    (v as any).playsInline = true;
+    (v as HTMLVideoElement & { playsInline: boolean }).playsInline = true;
     v.crossOrigin = "anonymous";
     v.preload = "auto";
 
@@ -101,8 +101,8 @@ export default function Halftone404Canvas() {
         }
       }
 
-      if (typeof (v as any).requestVideoFrameCallback === "function") {
-        (v as any).requestVideoFrameCallback(() => draw());
+      if (typeof (v as HTMLVideoElement & { requestVideoFrameCallback?: (callback: () => void) => void }).requestVideoFrameCallback === "function") {
+        (v as HTMLVideoElement & { requestVideoFrameCallback: (callback: () => void) => void }).requestVideoFrameCallback(() => draw());
       } else {
         requestAnimationFrame(draw);
       }
@@ -206,7 +206,7 @@ export default function Halftone404Canvas() {
       {ready && (
         <div className="absolute top-8 left-1/2 -translate-x-1/2 text-center">
           <div className="text-sm opacity-70">
-            Get out of here, this page doesn't exist.
+            Get out of here, this page doesn&apos;t exist.
           </div>
         </div>
       )}

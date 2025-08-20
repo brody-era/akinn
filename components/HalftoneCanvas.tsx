@@ -41,7 +41,7 @@ export default function HalftoneCanvas() {
     v.autoplay = true;
     v.loop = true;
     v.playsInline = true;
-    (v as any).playsInline = true;
+    (v as HTMLVideoElement & { playsInline: boolean }).playsInline = true;
     v.crossOrigin = "anonymous";
     v.preload = "auto";
 
@@ -101,8 +101,8 @@ export default function HalftoneCanvas() {
         }
       }
 
-      if (typeof (v as any).requestVideoFrameCallback === "function") {
-        (v as any).requestVideoFrameCallback(() => draw());
+      if (typeof (v as HTMLVideoElement & { requestVideoFrameCallback?: (callback: () => void) => void }).requestVideoFrameCallback === "function") {
+        (v as HTMLVideoElement & { requestVideoFrameCallback: (callback: () => void) => void }).requestVideoFrameCallback(() => draw());
       } else {
         requestAnimationFrame(draw);
       }

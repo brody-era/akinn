@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,11 +67,9 @@ export default function Footer() {
   // Clipboard: prefer image/svg+xml item, fallback to text
   const copySVGToClipboard = async (svgText: string) => {
     try {
-      // @ts-ignore
-      if (window.ClipboardItem && navigator.clipboard?.write) {
+      if ('ClipboardItem' in window && navigator.clipboard?.write) {
         const blob = new Blob([svgText], { type: "image/svg+xml" });
-        // @ts-ignore
-        const item = new window.ClipboardItem({ "image/svg+xml": blob });
+        const item = new ClipboardItem({ "image/svg+xml": blob });
         await navigator.clipboard.write([item]);
       } else {
         await navigator.clipboard.writeText(svgText);
@@ -151,14 +150,14 @@ export default function Footer() {
     };
 
     document.addEventListener("mousedown", onDocPointer);
-    document.addEventListener("touchstart", onDocPointer as any, { passive: true } as any);
+    document.addEventListener("touchstart", onDocPointer, { passive: true });
     document.addEventListener("keydown", onKey);
 
     requestAnimationFrame(() => firstItemRef.current?.focus());
 
     return () => {
       document.removeEventListener("mousedown", onDocPointer);
-      document.removeEventListener("touchstart", onDocPointer as any);
+      document.removeEventListener("touchstart", onDocPointer);
       document.removeEventListener("keydown", onKey);
     };
   }, [showMenu, closeMenu]);
@@ -170,12 +169,14 @@ export default function Footer() {
       <footer className="pb-8">
         <div className="mb-2">
           <Link href="/">
-            <img
+            <Image
               ref={triggerRef}
               id="akinn-logo"
               src="/akinnlabs.svg"
               alt="AKINN Logo"
-              className="h-6 mx-auto cursor-pointer select-none"
+              width={24}
+              height={24}
+              className="h-6 w-auto mx-auto cursor-pointer select-none"
               onContextMenu={handleLogoRightClick}
               onKeyDown={handleLogoKeyDown}
               onTouchStart={handleTouchStart}
@@ -197,7 +198,7 @@ export default function Footer() {
 
         <nav className="font-[100] text-sm text-neutral-600 tracking-wide">
           <a className="mx-2 opacity-70 hover:opacity-100" href="mailto:hey@akinn.xyz">
-            hey@akinn.xyz
+            Hey
           </a>
         </nav>
       </footer>
