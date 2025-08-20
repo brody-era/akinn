@@ -196,20 +196,8 @@ export default function Footer() {
         </div>
 
         <nav className="font-[100] text-sm text-neutral-600 tracking-wide">
-          <a className="mx-2 opacity-70 hover:opacity-100" href="https://x.com/yourhandle" target="_blank">
-            X
-          </a>{" "}
-          •
-          <a href="/blog" className="mx-2 opacity-70 hover:opacity-100">
-            Blog
-          </a>{" "}
-          •
-          <a className="mx-2 opacity-70 hover:opacity-100" href="/careers">
-            Careers
-          </a>{" "}
-          •
           <a className="mx-2 opacity-70 hover:opacity-100" href="mailto:hey@akinn.xyz">
-            Hey
+            hey@akinn.xyz
           </a>
         </nav>
       </footer>

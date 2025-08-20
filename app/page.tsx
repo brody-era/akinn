@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <PromoBanner 
-        message="Introducing Era: your new favorite crypto protocol. Coming soon to Ethereum."
+        message="Introducing Akinn: your new favorite web3 Studio. Coming soon to Ethereum."
         href="https://apps.apple.com/your-app-link" // Replace with your actual App Store link
       />
       <HalftoneCanvas />
