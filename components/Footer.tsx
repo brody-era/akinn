@@ -85,29 +85,38 @@ export default function Footer() {
                         ${pending ? "opacity-80 cursor-default" : "hover:bg-neutral-100"}`}
           >
             <span className="w-4 h-4 inline-flex items-center justify-center" aria-hidden="true">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M7 8l-4 4 4 4" />
-                <path d="M17 8l4 4-4 4" />
-                <path d="M14 5l-4 14" />
-              </svg>
-            </span>
-            <span className="flex items-center gap-2">
               {pending === "copy-svg" ? (
-                <>
-                  Copied <span aria-hidden>✓</span>
-                </>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
               ) : (
-                "Copy Logo as SVG"
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 8l-4 4 4 4" />
+                  <path d="M17 8l4 4-4 4" />
+                  <path d="M14 5l-4 14" />
+                </svg>
               )}
+            </span>
+            <span>
+              {pending === "copy-svg" ? "Copied!" : "Copy Logo as SVG"}
             </span>
           </button>
 
@@ -121,12 +130,10 @@ export default function Footer() {
           >
             <span className="w-4 h-4 inline-flex items-center justify-center" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7,10 12,15 17,10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
               </svg>
             </span>
-            <span>{pending === "brand-assets" ? "Downloading…" : "Download Brand Assets"}</span>
+            <span>{pending === "brand-assets" ? "Downloading…" : "Brand Assets"}</span>
           </button>
 
           {/* SR-only live region for accessibility */}
