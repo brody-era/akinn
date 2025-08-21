@@ -9,10 +9,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? "https://akinn.xyz"),
   title: "Akinn Labs",
-  description: "Akinn is a web3 studio building the future of decentralized experiences",
+  description: "Akinn builds technologies that know you without knowing about you.",
   openGraph: {
     title: "Akinn Labs",
-    description: "Akinn is a web3 studio building the future of decentralized experiences",
+    description: "Akinn builds technologies that know you without knowing about you.",
     url: "/",
     siteName: "Akinn Labs",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Akinn Labs" }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Akinn Labs",
-    description: "AKINN is a web3 studio building the future of decentralized experiences",
+    description: "Akinn builds technologies that know you without knowing about you.",
     images: ["/og.png"],
   },
 
