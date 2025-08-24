@@ -119,7 +119,7 @@ export default function BetaSignup() {
               // Show help text when email is invalid/incomplete
               <div className="animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
                 <p className="text-gray-500 text-sm text-center font-normal" style={{ color: '#adadad' }}>
-                  We'll notify you when the ERA Protocol launches.
+                  {"We'll notify you when the ERA Protocol launches."}
                 </p>
               </div>
             ) : (

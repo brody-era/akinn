@@ -232,7 +232,7 @@ export default function CustomizeProfile() {
         {/* Skip option */}
         <div className="mt-4 animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
           <p className="text-gray-500 text-sm">
-            Don't want to customize your account?{' '}
+            {"Don't want to customize your account? "}
             <button
               onClick={handleSkip}
               className="text-gray-900 font-medium hover:underline focus:outline-none transition-all duration-200 hover:scale-105"

@@ -10,17 +10,7 @@
 
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-
 export default function Dashboard() {
-  const router = useRouter();
-  
-  // In production, this would come from user context/session
-  const [userProfile] = useState({
-    accountName: "My Account",
-  });
-
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#fafafa' }}>
       
@@ -118,9 +108,9 @@ export default function Dashboard() {
               
               <div className="flex-1 flex items-center justify-center">
                 <img 
-                  src="/icons/research_icon.svg?v=2" 
+                  src="/icons/research_icon.svg" 
                   alt="Research"
-                  className="w-20 h-20 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </div>
             </div>

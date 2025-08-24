@@ -180,7 +180,7 @@ export default function BetaValidate() {
     if (fullCode.length === 6 && !isSubmitting) {
       handleSubmit();
     }
-  }, [code, isSubmitting]);
+  }, [code, isSubmitting, handleSubmit]);
 
   /**
    * Focus first input field when component mounts
@@ -216,7 +216,7 @@ export default function BetaValidate() {
             </div>
           </div>
           <h1 className="text-gray-900 mb-0.5 font-medium text-lg">
-            We've emailed you a verification code
+            {"We've emailed you a verification code"}
           </h1>
           <p className="text-gray-500 mb-0 font-normal text-base" style={{ color: '#999999' }}>
             Please enter the code we sent you below.
@@ -268,7 +268,7 @@ export default function BetaValidate() {
             ))}
             
             {/* Dash separator */}
-            <span className="text-gray-400 text-lg font-medium px-1">–</span>
+            <span className="text-gray-400 text-lg font-medium px-1">—</span>
             
             {/* Last 3 digits */}
             {code.slice(3, 6).map((digit, index) => (
@@ -307,7 +307,7 @@ export default function BetaValidate() {
 
           {/* Resend verification code option */}
           <div className="text-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <span className="text-gray-500 text-sm">Didn't receive a code? </span>
+            <span className="text-gray-500 text-sm">{"Didn't receive a code? "}</span>
             <button
               onClick={handleResend}
               className="text-gray-900 text-sm font-medium hover:underline focus:outline-none transition-all duration-200 hover:scale-105"
