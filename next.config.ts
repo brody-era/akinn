@@ -17,6 +17,22 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  
+  async redirects() {
+    return [
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'beta.akinn.xyz',
+          },
+        ],
+        destination: '/beta',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
