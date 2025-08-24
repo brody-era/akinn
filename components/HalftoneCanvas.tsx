@@ -84,7 +84,7 @@ export default function HalftoneCanvas() {
       const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const data = frame.data;
 
-      ctx.fillStyle = "#ffffff";
+      ctx.fillStyle = "#fafafa";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       for (let y = 0; y < canvas.height; y += grid) {

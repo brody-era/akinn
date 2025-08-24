@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import ConditionalFooter from "@/components/ConditionalFooter";
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff", // browser UI color
+  themeColor: "#fafafa", // browser UI color
 };
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="flex min-h-dvh flex-col bg-[#0a0a0a] text-[#FAFAFA] text-center antialiased">
         {children}
-        <Footer />
+        <ConditionalFooter />
       </body>
     </html>
   );

@@ -1,0 +1,104 @@
+<svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="70" rx="6" fill="#E5E5E5"/>
+<rect x="2" y="2" width="56" height="66" rx="4" fill="url(#paint0_linear_107_287)"/>
+<g opacity="0.75">
+<rect x="6" y="12" width="10" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<rect x="6" y="6" width="24" height="4" rx="2" fill="#A5F3FC"/>
+<g opacity="0.75">
+<rect x="6" y="18" width="10" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.75">
+<rect x="6" y="24" width="32" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.5">
+<rect x="6" y="30" width="10" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.5">
+<rect x="6" y="36" width="48" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.5">
+<rect x="6" y="42" width="48" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.25">
+<rect x="6" y="48" width="48" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.25">
+<rect x="6" y="54" width="10" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.75">
+<rect x="18" y="12" width="36" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.75">
+<rect x="40" y="24" width="14" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="18" y="54" width="36" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.25">
+<rect x="40" y="60" width="14" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.75">
+<rect x="18" y="18" width="36" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.5">
+<rect x="18" y="30" width="36" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<g opacity="0.25">
+<rect x="6" y="60" width="32" height="4" rx="2" fill="#A5F3FC"/>
+</g>
+<rect x="24" y="14" width="60" height="70" rx="6" fill="#E5E5E5"/>
+<rect x="26" y="16" width="56" height="66" rx="4" fill="#FAFAFA"/>
+<g opacity="0.75">
+<rect x="30" y="26" width="10" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<rect x="30" y="20" width="24" height="4" rx="2" fill="#E5E5E5"/>
+<g opacity="0.75">
+<rect x="30" y="32" width="10" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.75">
+<rect x="30" y="38" width="32" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.5">
+<rect x="30" y="44" width="10" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.5">
+<rect x="30" y="50" width="48" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.5">
+<rect x="30" y="56" width="48" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="30" y="62" width="48" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="30" y="68" width="10" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.75">
+<rect x="42" y="26" width="36" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.75">
+<rect x="64" y="38" width="14" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="42" y="68" width="36" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="64" y="74" width="14" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.75">
+<rect x="42" y="32" width="36" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.5">
+<rect x="42" y="44" width="36" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<g opacity="0.25">
+<rect x="30" y="74" width="32" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_107_287" x1="30" y1="2" x2="30" y2="68" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CFFAFE"/>
+<stop offset="1" stop-color="#ECFEFF"/>
+</linearGradient>
+</defs>
+</svg>
