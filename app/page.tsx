@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <PromoBanner 
         message="Introducing Era: your new favorite crypto protocol. Coming soon to Ethereum."
-        href="https://akinn.xyz/not-found" // Replace with redirect link
+        href="https://beta.akinn.xyz/" // Point to the beta ERA Protocol
       />
       <HalftoneCanvas />
     </>
